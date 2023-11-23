@@ -1,7 +1,13 @@
 // COLOR
-$linear-gardient: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
-$primary-color: #30c88f;
-$primary-dark-color: #2d314d;
-$text-color: #9597a5;
+$linear-gardient: linear-gradient(90deg, #0d4c93, #00c9c9);
+$product-linear-gradient: linear-gradient(
+  180deg,
+  #f8f8f8 0%,
+  rgba(248, 248, 248, 0) 100%
+);
+
+$primary-color: #0d4c93;
+$hover-color: #00c9c9;
+$text-color: #363535;
 // FONTS
-$font-family: "Public Sans", Arial, sans-serif;
+$font-family: "Roboto", Arial, sans-serif;

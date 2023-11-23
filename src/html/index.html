@@ -10,64 +10,7 @@
     <!-- Header -->
     <header class="">
       <div class="container">
-        <ul class="topnav">
-          <li class="topnav__item">
-            <img
-              src="./img/svg/location.svg"
-              alt="location icon"
-              class="topnav__img"
-              width="50px"
-              height="50px"
-            />
-            <p class="topnav__descr">г.Ташкент, Чиланзар 10 квартал, дом 3/1</p>
-          </li>
-          <li class="topnav__item">
-            <img
-              src="./img/svg/call.svg"
-              alt="call icon"
-              class="topnav__img"
-              width="50px"
-              height="50px"
-            />
-            <p class="topnav__descr">+998 71 276-62-53 +998 71 276-62-54</p>
-          </li>
-          <li class="topnav__item">
-            <img
-              src="./img/svg/medol-logo.svg"
-              alt="medol logo"
-              class="topnav__img"
-              width="200px"
-              height="58px"
-            />
-          </li>
-          <li class="topnav__item">
-            <img
-              src="./img/svg/search.svg"
-              alt="search icon"
-              class="topnav__img"
-              width="50px"
-              height="50px"
-            />
-          </li>
-          <li class="topnav__item">
-            <img
-              src="./img/svg/facebook.svg"
-              alt="facebook icon"
-              class="topnav__img"
-            />
-            <p class="topnav__descr">Мы на Facebook</p>
-          </li>
-          <li class="topnav__item">
-            <img
-              src="./img/svg/flag-rus.svg"
-              alt="flag"
-              class="topnav__img"
-              width="47px"
-              height="31px"
-            />
-            <p class="topnav__descr">Русский</p>
-          </li>
-        </ul>
+        @@include("./chunk/topnav.html")
         <nav class="sitenav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
@@ -90,10 +33,206 @@
             </li>
           </ul>
         </nav>
+        <div class="hero">
+          <div class="hero-info">
+            <h2 class="hero__title">Анализатор ABL800 FLEX</h2>
+            <p class="hero__descr">
+              Ориентированный на среднюю или высокую производительность тестов,
+              анализатор ABL800 FLEX измеряет полный набор параметров, включая
+              pH, газы крови, электролиты, метаболиты и показатели оксиметрии
+            </p>
+            <button class="hero__btn btn">Подробнее</button>
+          </div>
+          <img
+            src="../img/png/hero-img.png"
+            alt="analizator"
+            class="hero__img"
+            width="724px"
+            height="544px"
+          />
+        </div>
       </div>
     </header>
     <!-- main -->
-    <main></main>
+    <main>
+      <!-- product section start -->
+      <section class="product">
+        <div class="container">
+          <h2 class="product__title">ПРОДУКЦИЯ</h2>
+          <ul class="product__list">
+            <li class="product__item">
+              <img
+                src="../img/png/product-xirurg.png"
+                alt="xirurgiya"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">Эндоваскулярная хирургия</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="../img/png/product-diagnostika.png"
+                alt="product-diagnostika"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">Лабораторная диагностика</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="../img/png/product-kardio.png"
+                alt="product-kardio"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">Кардиохирургия</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="../img/png/product-diabet.png"
+                alt="product-diabet"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">ДИАБЕТ</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="../img/png/product-endourologiya.png"
+                alt="product-endourologiya"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">ЭНДОУРОЛОГИЯ</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+            <li class="product__item">
+              <img
+                src="../img/png/product-aritmologiya.png"
+                alt="product-aritmologiya"
+                class="product__item-img"
+              />
+              <h3 class="product__item-title">АРИТМОЛОГИЯ</h3>
+              <button class="btn product__item-btn">Посмотреть все</button>
+            </li>
+          </ul>
+          <a href="#" class="product__link"
+            >Перейти в каталог нашей продукции
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_502_67)">
+                <path
+                  d="M30 15C30 6.7285 23.2715 -2.94112e-07 15 -6.55671e-07C6.7285 -1.01723e-06 -2.94112e-07 6.72849 -6.55671e-07 15C-1.01723e-06 23.2715 6.72967 30 15 30C23.2703 30 30 23.2715 30 15ZM2.32377 15C2.32377 8.01123 8.01006 2.32377 15 2.32377C21.9899 2.32377 27.6762 8.01123 27.6762 15C27.6762 21.9899 21.9899 27.6762 15 27.6762C8.01006 27.6762 2.32377 21.9888 2.32377 15Z"
+                  fill="#0D4C93"
+                />
+                <path
+                  d="M13.3966 21.6344L19.2061 15.825C19.6569 15.3718 19.6569 14.6399 19.2061 14.1867L13.3966 8.37725C12.9621 8.0043 12.3196 8.0043 11.885 8.37725C11.3982 8.79438 11.3413 9.52867 11.7584 10.0155L16.7429 15L11.7583 19.9962C11.3075 20.4493 11.3075 21.1813 11.7583 21.6344C12.2115 22.0853 12.9435 22.0853 13.3966 21.6344Z"
+                  fill="#0D4C93"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_502_67">
+                  <rect
+                    width="30"
+                    height="30"
+                    fill="white"
+                    transform="translate(30) rotate(90)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!-- product section end -->
+      <!-- service section start -->
+      <section class="service">
+        <h2 class="service__title">УСЛУГИ</h2>
+        <ul class="service__list">
+          <div class="container">
+            <li class="service__item">
+              <img
+                src="../img/png/servic-1.png"
+                alt="servic-1"
+                class="service__item-img"
+                width="394px"
+                height="259px"
+              />
+              <h3 class="service__item-title">СЕРВИС ОБОРУДОВАНИЯ</h3>
+              <p class="service__item-descr">
+                Компания предоставляет сервисное обслуживание по всем
+                предоставляемым продуктам. У наших инженеров имеется опыт и
+                сертификаты фирм производителей......
+              </p>
+              <a href="" class="btn service__item-btn">Подробнее</a>
+            </li>
+            <li class="service__item">
+              <img
+                src="../img/png/servic-2.png"
+                alt="servic-2"
+                class="service__item-img"
+                width="394px"
+                height="259px"
+              />
+              <h3 class="service__item-title">РЕГИСТРАЦИИ</h3>
+              <p class="service__item-descr">
+                Обеспечение получения разрешительных документов,
+                регистрационного удостоверения на изделия медицинского
+                назначения Подготовка объектов к проведению ....
+              </p>
+              <a href="" class="btn service__item-btn">Подробнее</a>
+            </li>
+            <li class="service__item">
+              <img
+                src="../img/png/servic-3.png"
+                alt="servic-3"
+                class="service__item-img"
+                width="394px"
+                height="259px"
+              />
+              <h3 class="service__item-title">УСЛУГИ ЛОГИСТИКИ</h3>
+              <p class="service__item-descr">
+                Компания предоставляет сервисное обслуживание по всем
+                предоставляемым продуктам. У наших инженеров имеется опыт и
+                сертификаты фирм производителей.....
+              </p>
+              <a href="" class="btn service__item-btn">Подробнее</a>
+            </li>
+          </div>
+        </ul>
+      </section>
+      <!-- service section end -->
+      <!-- about section start -->
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">О КОМПАНИИ</h2>
+          <img
+            src="../img/svg/about-hero.svg"
+            alt="about-hero"
+            class="about__img"
+          />
+          <div class="about__info">
+            <p class="about__descr">
+              Группа компаний MEDOL создавалась высококвалифицированными
+              специалистами в сфере медицины, инженерии и экономики, за плечами
+              которых значительный опыт на рынке высоких медицинских технологий,
+              которая имеет свои представительства в разных уголках Земли. В
+              2011 году MEDOL зарегистрировал в Узбекистане ИП ООО “Medical
+              Online Services". Цель компании построить прозрачный долгосрочный
+              бизнес, принести пользу обществу путем развития и внедрения
+              передовых технологий в систему здравоохранения Республики
+              Узбекистан.
+            </p>
+            <a href="" class="btn about__link">Узнать больше</a>
+          </div>
+        </div>
+      </section>
+      <!-- about section send -->
+    </main>
     <!-- footer -->
     <footer></footer>
     <script src="./js/main.js"></script>
