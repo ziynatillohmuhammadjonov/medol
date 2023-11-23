@@ -8,7 +8,6 @@ const babel = require("gulp-babel"); //babelni sozlash packagesjon filega: "babe
 //   ]
 // }, ni sozlasha kerak
 const uglify = require("gulp-uglify");
-const webpack = require("webpack");
 const concat = require("gulp-concat");
 const gulpif = require("gulp-if");
 // konfiguratsiya

@@ -1,0 +1,24 @@
+.sitenav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 35px;
+    border: solid red;
+    visibility: unset;
+  }
+  &__item:first-child {
+  }
+  &__link {
+    display: inline-block;
+    padding: 2.4rem 4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #0d4c93;
+    background: #fff;
+    &:hover {
+      color: #00c9c9;
+    }
+  }
+}

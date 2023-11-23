@@ -16,25 +16,28 @@ const webpCss = require("gulp-webp-css"); //webp rasmlarni o'qish kodin o'zi qil
 const path = require("../../config/path.js");
 
 // Scss otrabotka
-const scss = () => {
-  return src(path.scss.src)
-    .pipe(plumber())
-    .pipe(sassGlob())
-    .pipe(sass())
-    .pipe(webpCss())
-    .pipe(concat("main.css"))
-    .pipe(sourcemeps.init())
-    .pipe(shorthand())
-    .pipe(groupMediaQueries())
-    .pipe(autoperifixer())
-    .pipe(dest(path.scss.dest))
-    .pipe(sourcemeps.write())
-    .pipe(
-      rename({
-        suffix: ".min",
-      })
-    )
-    .pipe(csso())
-    .pipe(dest(path.scss.dest));
+const scss = (cb) => {
+  return (
+    src(path.scss.src)
+      .pipe(plumber())
+      .pipe(sassGlob())
+      .pipe(sass())
+      // .pipe(webpCss())
+      .pipe(concat("main.css"))
+      .pipe(sourcemeps.init())
+      .pipe(shorthand())
+      .pipe(groupMediaQueries())
+      .pipe(autoperifixer())
+      .pipe(dest(path.scss.dest))
+      .pipe(sourcemeps.write())
+      .pipe(
+        rename({
+          suffix: ".min",
+        })
+      )
+      .pipe(csso())
+      .pipe(dest(path.scss.dest)),
+    cb()
+  );
 };
 module.exports = scss;

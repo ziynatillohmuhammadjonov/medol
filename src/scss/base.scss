@@ -1,18 +1,17 @@
-$font-size: 62.5%;
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/colors";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: $font-size;
-  font-size: 2rem;
-  color: black;
-}
-body {
-  background-image: url("../img/DSC_0437.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@import "./**/*.{.sass,.scss}";
+@import "vendors/normalize";
+
+@import "base/reset";
+@import "base/typography";
+
+@import "layout/header";
+@import "layout/footer";
+@import "./layout/navbar";
+
+@import "components/button";
+@import "components/cover";
+@import "components/topnav";
+@import "pages/login";

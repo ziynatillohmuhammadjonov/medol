@@ -13,11 +13,13 @@ const app = require("../../config/app.js");
 
 // HTML otrabotka
 const html = () => {
-  return src(path.html.src)
-    .pipe(gp.plumber())
-    .pipe(gp.fileInclude(app.htmlmin))
-    .pipe(gp.webpHtml())
-    .pipe(gp.htmlmin())
-    .pipe(dest(path.html.dest));
+  return (
+    src(path.html.src)
+      .pipe(gp.plumber())
+      .pipe(gp.fileInclude(app.htmlmin))
+      // .pipe(gp.webpHtml())
+      .pipe(gp.htmlmin())
+      .pipe(dest(path.html.dest))
+  );
 };
 module.exports = html;
