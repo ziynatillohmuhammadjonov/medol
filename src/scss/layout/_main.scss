@@ -1,6 +1,7 @@
 main {
   flex-grow: 1;
 }
+// Product start
 .product {
   margin-bottom: 6.9rem;
   &__title {
@@ -67,7 +68,10 @@ main {
     }
   }
 }
+// Product end
+// Service start
 .service {
+  margin-bottom: 6.8rem;
   &__title {
     font-family: $font-family;
     color: $primary-color;
@@ -82,7 +86,7 @@ main {
     background-image: url(../../img/png/servis-bg.png);
     background-repeat: no-repeat;
     .container {
-      padding: 78px 0 92px 0;
+      padding: 78px 0 0 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -126,6 +130,121 @@ main {
     }
   }
   &__item:not(:last-child) {
-    margin-right: 9.8rem;
+    // margin-right: 9.8rem;
   }
 }
+// servise end
+// About start
+.about {
+  margin-bottom: 10rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  &__img {
+    z-index: 2;
+  }
+  &__title {
+    width: 100%;
+    font-family: $font-family;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 1.1rem;
+  }
+  &__info {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    max-width: 1023px;
+    max-height: 504px;
+    padding: 57px 40px 57px 28rem;
+    background-color: $product-linear-gradient;
+    border-radius: 0px, 50px, 50px, 0px;
+  }
+  &__descr {
+    font-family: $font-family;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 5rem;
+  }
+}
+// About end
+// news start
+.news {
+  &__title {
+    font-family: $font-family;
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 5.6rem;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+    background-image: $product-linear-gradient;
+    border-radius: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 384px;
+    padding: 120px 56px 54px;
+    &-img {
+      border-radius: 4rem;
+      margin-bottom: 2.3rem;
+      position: absolute;
+      top: -25%;
+    }
+    &-title {
+      font-family: "Montserrat";
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 18px;
+      color: $primary-color;
+    }
+    &-time {
+      font-family: "Montserrat";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+      margin-bottom: 13px;
+      color: $primary-color;
+    }
+    &-descr {
+      font-family: "Montserrat";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    &-btn {
+      position: absolute;
+      bottom: -35px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 8.3rem;
+  }
+}
+// news end
