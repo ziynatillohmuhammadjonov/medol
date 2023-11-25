@@ -193,6 +193,7 @@ main {
   &__list {
     display: flex;
     align-items: center;
+    margin-bottom: 9.4rem;
   }
   &__item {
     position: relative;
@@ -246,5 +247,58 @@ main {
   &__item:not(:last-child) {
     margin-right: 8.3rem;
   }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33.5rem;
+    margin-bottom: 10.6rem;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-color;
+    &:hover {
+      color: $hover-color;
+    }
+    &:hover svg path {
+      fill: $hover-color;
+    }
+  }
 }
 // news end
+// partners start
+.partners {
+  text-align: center;
+  &__title {
+    font-family: $primary-color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0em;
+    color: $primary-color;
+    margin-bottom: 5.6rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 38px 26px;
+    margin-bottom: 13rem;
+  }
+  &__item {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    max-width: 275px;
+    background-image: $product-linear-gradient;
+    border-radius: 3rem;
+  }
+}
+// partners end

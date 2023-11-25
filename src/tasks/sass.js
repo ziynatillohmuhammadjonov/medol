@@ -25,7 +25,7 @@ const scss = (cb) => {
       // .pipe(webpCss())
       .pipe(concat("main.css"))
       .pipe(sourcemeps.init())
-      .pipe(shorthand())
+      // .pipe(shorthand())
       .pipe(groupMediaQueries())
       .pipe(autoperifixer())
       .pipe(dest(path.scss.dest))

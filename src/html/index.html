@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/svg/medol-logo.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="/css/main.css" />
     <title>Medol</title>
   </head>
@@ -310,11 +315,11 @@
                 <g clip-path="url(#clip0_502_221)">
                   <path
                     d="M30 14.7546C30 6.76329 23.2715 0.262695 15 0.262695C6.7285 0.262694 1.6232e-06 6.76329 1.27389e-06 14.7546C9.24573e-07 22.746 6.72967 29.2466 15 29.2466C23.2703 29.2466 30 22.746 30 14.7546ZM2.32377 14.7546C2.32377 8.00258 8.01006 2.50776 15 2.50776C21.9899 2.50776 27.6762 8.00258 27.6762 14.7546C27.6762 21.5078 21.9899 27.0015 15 27.0015C8.01006 27.0015 2.32377 21.5067 2.32377 14.7546Z"
-                    fill="#00C9C9"
+                    fill="#0d4c93"
                   />
                   <path
                     d="M13.3966 21.1643L19.2061 15.5517C19.6569 15.1138 19.6569 14.4067 19.2061 13.9689L13.3966 8.35618C12.9621 7.99586 12.3196 7.99586 11.885 8.35618C11.3982 8.75918 11.3413 9.4686 11.7584 9.93897L16.7429 14.7547L11.7583 19.5816C11.3075 20.0194 11.3075 20.7265 11.7583 21.1643C12.2115 21.5999 12.9435 21.5999 13.3966 21.1643Z"
-                    fill="#00C9C9"
+                    fill="#0d4c93"
                   />
                 </g>
                 <defs>
@@ -363,9 +368,85 @@
         </div>
       </section>
       <!-- News section end -->
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title">ПАРТНЕРЫ</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img
+                src="../img/png/aesculap-b-braun.png"
+                alt="aesculap-b-braun"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <img src="../img/png/asp.png" alt="asp" class="partners__img" />
+            </li>
+            <li class="partners__item">
+              <img src="../img/png/bd.png" alt="bd" class="partners__img" />
+            </li>
+            <li class="partners__item">
+              <img
+                src="../img/png/biosense.png"
+                alt="biosense"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="../img/png/cordis.png"
+                alt="cordis"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <img
+                src="../img/png/depuy-synthes-spine-jandj.png"
+                alt="depuy-synthes-spine-jandj"
+                class="partners__img"
+              />
+            </li>
+            <li class="partners__item">
+              <img src="../img/png/eth.png" alt="eth" class="partners__img" />
+            </li>
+            <li class="partners__item">
+              <img
+                src="../img/png/ethicon-endo-surgery.png"
+                alt="ethicon-endo-surgery"
+                class="partners__img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- footer -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer-left">
+        <div class="footer__contact">
+          <h3 class="footer__title">Контакты</h3>
+          @@include('./chunk/footer.html')
+        </div>
+        <div class="footer__info">
+          <img
+            src="../img/svg/medol-logo.svg"
+            alt="medol-logo"
+            class="footer__info-img"
+            width="200px"
+            height="58px"
+          />
+          <p class="footer__info-descr">
+            Наша цель – построить прозрачный, долгосрочный бизнес, приносить
+            огромную пользу населению, путем решения глобальных вопросов.
+            Внедряя инновационные технологии на рынок Узбекистана.
+          </p>
+        </div>
+        <a href="#" class="footer__link"
+          >© 2021 ООО «Medical Online Services»</a
+        >
+      </div>
+      <div class="footer-right"></div>
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

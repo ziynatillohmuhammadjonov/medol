@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: $product-linear-gradient;
+  padding: 4.8rem 0 2.8rem 0;
+  .footer-left,
+  .footer-right {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.7rem;
+  }
+  &__title {
+    font-family: $font-family;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $text-color;
+    display: inline;
+  }
+  &__title:first-child {
+    padding-top: 7px;
+  }
+  .topnav {
+    max-width: 51rem;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-bottom: 0;
+    gap: 2.6rem;
+    &__btn {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23px;
+      letter-spacing: 0.04em;
+      padding: 1.4rem 3rem;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7.7rem;
+    &-img {
+      margin-right: 3.7rem;
+    }
+    &-descr {
+      font-family: $font-family;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.04em;
+      text-align: left;
+    }
+  }
+  &__link {
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: $text-color;
+  }
+}
